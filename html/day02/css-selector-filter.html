@@ -1,0 +1,59 @@
+<!--     form > *[name^=d] name的属性以d开头的
+         form > *[name$=d] name的属性以d结尾的
+         form > *[name*=d] name的属性值包含有d的
+         form > *[name] 已选择的元素有name属性
+         form > *[name=d] 已选择的元素有name属性,并且属性值为d
+
+         伪类过滤器
+         selector:first-child 过滤出已选出元素中的是第一个孩子的元素
+         selector：last-child 
+         selector: nth-child(n) 过滤出已选出元素中的 是第n个孩子的元素       【even 、odd、2n+1、 3n+1】可以当做参数，偶数奇数   
+         selector: only-child   选中独生子
+          selector: not(only-child)   选中不是独生子
+
+          ......
+        selector:hover    光标放上去时
+        selector:active   点击时的
+        selector:visited  已访问过的
+        selector:focus    聚焦时  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* p.zxk{
+            color: red;
+        }  */
+        /* div p{
+            color:blue;   同样对p操作，上面优先级更高一些
+        } 
+        /* .frist, p{
+            color: chartreuse;  第二个优先级更高一些
+        } */
+
+        /* -------------------------- */
+
+        .zxk ul[name=xx] :last-child{
+            color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="zxk">
+        <ul name="xx">
+            <li class="frist">封闭</li>
+            <li>字迹</li>
+            <li>熊加</li>
+        </ul>
+
+        <p class="zxk">这是文本</p>
+        <ul>
+            <li>11</li>
+            <li>22</li>
+        </ul>
+    </div>
+</body>
+</html>
