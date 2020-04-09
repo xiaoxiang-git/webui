@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1743363 */
+  src: url('http://at.alicdn.com/t/font_1743363_quzo9i526h.eot');
+  src: url('http://at.alicdn.com/t/font_1743363_quzo9i526h.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_1743363_quzo9i526h.woff2') format('woff2'),
+  url('http://at.alicdn.com/t/font_1743363_quzo9i526h.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_1743363_quzo9i526h.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_1743363_quzo9i526h.svg#iconfont') format('svg');
+}
+ .iconfont{
+     font-style: normal;
+     font-family:'iconfont';
+ }
+ ul{
+     list-style: none;
+ }
+ul.ultest > li::before{
+    font-family: 'iconfont';
+    content: '\e652';
+}
+    </style>
+</head>
+<body>
+    <div style="font-family: iconfont;">&#xe63b;</div>
+    <div>
+        <ul>
+            <li><i class="iconfont">&#xe652;</i><span>首页</span></li>
+            <li><i class="iconfont">&#xe642;</i><span>列表</span></li>
+            <li><i class="iconfont">&#xe651;</i><span>展示</span></li>
+        </ul>
+        <ul class="ultest">
+            <li>校园</li>
+            <li >公园</li>
+            <li >体育馆</li>
+        </ul>
+    </div>
+</body>
+</html>

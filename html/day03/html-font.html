@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            font-weight: 100;
+            font-style: italic;
+            font-family: "宋体";
+        }
+        .three{
+            font-weight: bold;
+            font-family: "微软雅黑";
+        }
+        .three{
+            color: blue;
+            background-color: brown;
+            /* height: 100px;  */
+            line-height: 100px;
+            /* overflow: scroll; */
+            text-indent: 2em;   
+        }
+        .four{
+           /* font:bold italic 10px/2em "宋体","微软雅黑" */
+           font:16px "微软雅黑"
+        }
+        .btn{
+           
+            border: 1px solid #ccc;
+            display: inline-block;   /*  一行显示     */
+            border-radius: 5px;
+            padding: .1em  .2em;  /*  纵向  横向     */
+        }
+        .b1{
+            font-size: 12px;
+        }
+        .b2{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 字体单位： px 像素 
+         字体可以被继承
+         font-size 字体大小 默认16px   12/14
+         font-weight 字体的粗细程度  默认 normal、 bold 加粗 、 bolder 比当前元素上继承的值要大一些 、 100-900、strong同样是加粗，但用css更好。
+         font-style  风格  normal 默认 【斜体 italic】
+         font-family 字体族 
+         line-height 行高  dan位 px  绝对单位 容易写死/    em相对
+
+         速写
+         font：[font-weight] [font-style] font-size/line-height font-family
+    -->
+    <div style="font-size:12px">
+        <span>p</span>
+        <div><span>p2</span></div>
+    </div>
+    <div>
+        <h1 style="text-align: center;">我是一级标题</h1>
+        <div><font class="one">这是字体</font></div>
+        <div><font class="two">这是字体2</font></div>
+        <div class="three"><strong>这是一个盒子,这是   </strong></div>
+        <div><font class="four">这是字体4</font></div>
+
+   </div>
+
+   <div class="btn b1">大按鈕</div>
+   <div class="btn b2">小按鈕</div>
+</body>
+</html>

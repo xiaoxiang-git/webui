@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .container{
+            background-color: silver;
+        }
+        .container > div{
+            height: 100px;
+            width: 200px;
+        }
+        .container > div.one{
+            background-color: pink;
+            float: left;
+        }
+        .container > div.two{
+            background-color: plum;
+            float: left;
+        }
+        .container > div.three{
+            background-color: powderblue;
+            float: left;
+        }
+        div.products{
+            background-color: bisque;
+            float: left;
+           width: 100%;
+            height: 200px;
+        }
+        .container::after{
+            content: "";
+            display:block; /*让伪元素变成块元素*/
+            clear: both;
+        } 
+    </style>
+<body>
+    <div class="container">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          
+    </div>
+    <div class="products"></div>
+</body>
+</html>
