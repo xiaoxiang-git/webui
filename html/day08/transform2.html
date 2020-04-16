@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 400px;
+      height: 400px;
+      background-color: rosybrown;
+      margin: 0 auto ;
+      /* 指定变形的原点*/
+      transform-origin: left top;
+
+      /* 过渡 */
+      transition-property:transform ;
+      transition-duration:2s;
+    }
+    .box:hover {
+      /* 指定变形的样式 */
+      /* transform: rotateZ(45deg); */
+      /* transform:translate(40px,40px); */
+      /* transform:scaleX(2); */
+      transform:skewX(45deg)
+     
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

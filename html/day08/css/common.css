@@ -1,0 +1,40 @@
+/* 对于当前项目中所有的网页都适用 */
+/* 1. 重置样式 */
+body {
+  font: 12px "Microsoft Yahei","微软雅黑",verdana;
+  color: #333333;
+}
+body,ul,ol,p,h1,h2,h3 {
+  margin: 0;
+  padding: 0;
+}
+ul ,ol{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+/* 2.公共样式 */
+.wrapper {
+  width: 1090px;
+  margin: 0 auto;
+}
+.f_left {
+  float:left;
+}
+.f_right {
+  float: right;
+}
+.f_clear {
+  clear: both;
+}
+
+.icon {
+  display: inline-block;
+  margin: 0 6px;
+}
+.btn {
+  display: inline-block;
+}

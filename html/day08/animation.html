@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: chartreuse;
+            height: 150px;
+            width: 100px;
+        }
+        /* 设置动画帧 */
+        @keyframes move{
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: 300px;
+            }
+
+        }
+        /* 设置动画 */
+        .move2{
+            animation-name: move;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .m1{
+            animation-delay: 1s;
+        }
+        .m2{
+            animation-delay: 2s;
+        }
+        .m3{
+            animation-delay: 3s;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box move2 m1"></div>
+    <div class="box move2 m2"></div>
+    <div class="box move2 m3"></div>
+</body>
+</html>
